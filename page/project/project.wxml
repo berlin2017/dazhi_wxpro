@@ -1,0 +1,36 @@
+<import src="../common/head.wxml" />
+<view class="container">
+	
+	  <template is="head" data="{{title: '报告老板！'}}"/>
+<view class="welcome">
+贵公司可申报如下项目：
+</view>		
+<view class="artcile-list">	
+	<block wx:for-items="{{projects}}" wx:key="{{item.cid}}">
+		<view class="artcile-item">
+			<view id="{{item.cid}}" class="artcile-list-item-hd {{item.open ? 'artcile-list-item-hd-show' :'' }}" bindtap="artcileToggle">
+				<view class="artcile_title">
+					{{index + 1}} {{item.title}} 
+				</view>
+				
+				<view class="butie">	
+					补贴:{{item.money}}
+				</view>
+			
+			<view id="{{item.cid}}" class="dafen" bindtap="bindDafen">	
+					打分
+				</view>
+
+			</view>
+			<view class="artcile-list-item-bd {{item.open ? 'artcile-list-item-bd-show' : ''}}">
+			<text class="project-desc">{{item.text}}</text>
+
+				
+			</view>
+
+		</view>
+		
+		</block>		
+</view>		
+	
+</view>

@@ -1,0 +1,42 @@
+<import src="../common/head.wxml" />
+
+<view class="container">
+	
+
+	<scroll-view scroll-y="true" scroll-into-view="{{scrollIntoView}}" bindscroll="onScroll">
+		<swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+			<block wx:for="{{banners}}" wx:key="id">
+				<swiper-item>
+					<image bindtap="tapBanner" data-id="{{index}}" src="{{item.img}}"/>
+				</swiper-item>
+			</block>
+		</swiper>
+
+		
+
+		
+
+			  <template is="head" data="{{title: '最新信息'}}"/>
+				
+<view class="artcile-list">	
+	<block wx:for-items="{{artciles}}" wx:key="{{item.cid}}">
+		<view class="artcile-item">
+			<view id="{{item.cid}}" class="artcile-list-item-hd {{item.open ? 'artcile-list-item-hd-show' :'' }}" bindtap="artcileToggle">
+				<view class="artcile_title">
+					{{index + 1}} {{item.title}} 
+				</view>
+				<view class="time-zone">
+				{{item.time}}
+				</view>
+			</view>
+			<view class="artcile-list-item-bd {{item.open ? 'artcile-list-item-bd-show' : ''}}">
+			<text class="text">{{item.text}}</text>
+			</view>
+		</view>
+		</block>		
+</view>		
+	
+		
+
+	</scroll-view>
+</view>

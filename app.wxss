@@ -1,0 +1,58 @@
+page {
+	background-color: #efefef;
+}
+
+.section {
+	background: #fff;
+	border-bottom: 1rpx solid #dedede;
+	margin-bottom: 15rpx;
+	padding: 20rpx;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/*特殊按钮*/
+button.yellow {
+	color: #fff;
+	background: #feb70f;
+}
+button.yellow:after {
+	border-color: rgba(255, 133, 111, 0.3);
+}
+button.yellow.hover {
+	background: #e4b203;
+}
+button.yellow.disabled {
+	background: #f4e283;
+}
+
+.page-head{
+  padding: 60rpx 50rpx 80rpx;
+  text-align: center;
+}
+.page-head-title{
+  display: inline-block;
+  padding: 0 40rpx 20rpx 40rpx;
+  font-size: 32rpx;
+  color: #111111;
+}
+.page-head-line{
+  margin: 0 auto;
+  width: 150rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+.page-head-desc{
+  padding-top: 20rpx;
+  color: #9B9B9B;
+  font-size: 32rpx;
+}
+
+.button-area{
+
+  margin-top:10px;
+}

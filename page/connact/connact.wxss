@@ -1,0 +1,31 @@
+/* page/connact/connact.wxss */
+.label-3-text{
+  color: #576B95;
+  font-size: 28rpx;
+}
+
+.area-1{
+ 
+  color: #576B95;
+  font-size: 28rpx;
+  text-indent: 2em;
+  margin-top : 10px;
+}
+.area-2{
+  font-size: 28rpx;
+  text-indent:2em;
+}
+
+.text{
+  color: #576B95;
+  font-size: 28rpx;
+}
+
+.area{
+  margin:10px;
+
+}
+.title{
+  color: #576B95;
+  margin-bottom: 10px;
+}

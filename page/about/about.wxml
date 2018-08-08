@@ -1,0 +1,32 @@
+<!--page/about/about.wxml-->
+<view class="area">
+
+<image mode="aspectFit" style="width: 200px; height: 200px;  "    src="../../imgs/index/WechatIMG1.jpeg" />
+
+
+
+<view class="brand-name">
+企申宝
+</view>
+
+<view class="kouhao">
+    科技创新  合作共赢
+</view>
+
+<view class="desc">
+
+
+我们今天一切工作都是为了未来更大之
+
+</view>
+
+
+<view class="version">
+
+当前版本 1.0.0
+
+</view>
+</view>
+
+
+

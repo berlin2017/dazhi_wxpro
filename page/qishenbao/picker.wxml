@@ -1,0 +1,83 @@
+<import src="../common/head.wxml" />
+
+
+<view class="container">
+  <template is="head" data="{{title: '企业政策奖补云平台'}}"/>
+
+  <view class="page-body">
+
+
+  
+    <view class="page-section">
+
+     <view class="weui-cells__title">公司名</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" auto-focus placeholder="公司名" bindchange="bindChange" id="company_name"/>
+        </view>
+      </view>
+
+
+      <view class="weui-cells__title">专利</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindLocationChange" value="{{location_index}}" range="{{location}}" id="location">
+              <view class="weui-input">{{location[location_index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells__title">行业</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange" value="{{array_index}}" range="{{array}}" id="trade">
+              <view class="weui-input">{{array[array_index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      
+      <view class="weui-cells__title">社保</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindShebaoChange" value="{{shebao_index}}" range="{{shebao}}" id="shebao">
+              <view class="weui-input">{{shebao[shebao_index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells__title">近一年销售额</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindXiaoShouEChange" value="{{xse_index}}" range="{{xse}}" id="xse">
+              <view class="weui-input">{{xse[xse_index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+<view class="button-area" bindtap="bindButtonClick">
+<button type="primary" >查询</button>
+</view>
+  </view>
+</view>
+  
+</view>

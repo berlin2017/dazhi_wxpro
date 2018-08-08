@@ -1,0 +1,35 @@
+/* page/about/about.wxss */
+.area{
+
+    text-align:center;
+     
+}
+
+.brand-name{
+
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.kouhao{
+
+    margin:10px
+}
+
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: white; 
+}
+.desc{
+    font-size:15px;
+
+}
+
+.version{
+
+
+    margin-top:80px;
+      color: #576B95;
+      font-size:10px;
+}

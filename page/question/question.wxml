@@ -1,0 +1,71 @@
+<import src="../common/head.wxml" />
+
+
+<view class="container">
+  <template is="head" data="{{title: '打分'}}"/>
+
+  <view class="page-body">
+
+  
+  <view class="question">
+  <view class="question-text">
+  1. {{ques1}}
+  </view>
+        <radio-group id="ques1" class="radio-group" bindchange="radioChange">
+        <label class="radio" >
+          <radio value="yes" />是
+          </label>
+            <label class="radio" >
+          <radio value="no" />否
+        </label>
+      </radio-group>
+  </view>
+
+
+<view class="question">
+  <view class="question-text">
+  2. {{ques2  }}
+  </view>
+        <radio-group id="ques2" class="radio-group" bindchange="radioChange">
+        <label class="radio" >
+          <radio value="yes" />是
+          </label>
+            <label class="radio" >
+          <radio value="no" />否
+        </label>
+      </radio-group>
+  </view>
+<view class="question">
+  <view class="question-text">
+  3. {{ques3}}
+  </view>
+        <radio-group id="ques3" class="radio-group" bindchange="radioChange">
+        <label class="radio" >
+          <radio value="yes" />是
+          </label>
+            <label class="radio" >
+          <radio value="no" />否
+        </label>
+      </radio-group>
+  </view>
+  
+  <view class="question">
+  <view class="question-text">
+  4. {{ques4}}
+  </view>
+        <radio-group id="ques4" class="radio-group" bindchange="radioChange">
+        <label class="radio" >
+          <radio value="yes" />是
+          </label>
+            <label class="radio" >
+          <radio value="no" />否
+        </label>
+      </radio-group>
+  </view>
+ 
+<view class="button-area" bindtap="bindButtonClick">
+<button type="primary" >打分</button>
+</view>
+
+</view>
+  </view>

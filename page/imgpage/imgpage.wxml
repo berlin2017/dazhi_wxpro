@@ -1,0 +1,9 @@
+
+<view class="body">
+
+<view class="title">
+    {{artcile.title}}
+</view>
+
+<text class="text">{{artcile.text}}</text>
+</view>

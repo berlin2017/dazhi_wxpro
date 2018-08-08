@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="header">
+    <image class="avatar" src="{{userInfo.avatarUrl}}" />
+    <view class="nickname">{{userInfo.nickName}}</view>
+
+  </view>
+  <view class="section">
+    <navigator url="/page/account/account" class="navigator">
+      <view class="navigator-text">个人信息</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+
+    <navigator url="/page/connact/connact" class="navigator">
+      <view class="navigator-text">联系大之</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+
+    <navigator url="/page/about/about" class="navigator">
+      <view class="navigator-text">关于企申宝</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+
+    <button open-type='getUserInfo' bindgetuserinfo='getUserInfo' type='primary' style='bottom:30px;position:absolute;width:70%;left:15%;' wx:if='{{!userInfo}}'>点击登陆</button>
+  </view>
+
+
+
+</view>
